@@ -31,8 +31,14 @@ export const buildLoaders = (options: BuildOptions): webpack.RuleSetRule[] => {
         ],
     }
 
+    const fontLoader = {
+        test: /\.(woff|woff2|eot|ttf|otf)$/i,
+        type: 'asset/resource',
+    };
+
     return [
         typescriptLoader,
         cssLoader,
+        fontLoader,
     ]
 }

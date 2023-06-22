@@ -5,3 +5,5 @@ declare module '*.scss' {
     const classnames: IClassNames;
     export = classnames;
 }
+
+declare module '*.ttf';
